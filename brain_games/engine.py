@@ -14,8 +14,8 @@ def engine(get_question, get_answer, rules, count):
         user_answer = prompt.string('Your answer: ')
         if user_answer != str(answer):
             print(
-                f'\'{user_answer}\' is wrong answer ;(.',
-                f'Correct answer was \'{answer}\'.'
+                f'{user_answer!r} is wrong answer ;(.',
+                f'Correct answer was {answer!r}.'
             )
             print(f'Let\'s try again, {name}!')
             return
